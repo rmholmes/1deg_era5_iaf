@@ -1,62 +1,56 @@
 {
-  "description": "JRA55-do v1.4.0 IAF forcing",
+  "description": "ERA5 forcing",
   "inputs": [
     {
-      "filename": "INPUT/rsds_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010130-{{year}}12312230.nc",
-      "fieldname": "rsds",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "ssrd",
       "cname": "swfld_ai"
     },
     {
-      "filename": "INPUT/rlds_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010130-{{year}}12312230.nc",
-      "fieldname": "rlds",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "strd",
       "cname": "lwfld_ai"
     },
     {
-      "filename": "INPUT/prra_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010130-{{year}}12312230.nc",
-      "fieldname": "prra",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "tp",
       "cname": "rain_ai"
     },
     {
-      "filename": "INPUT/prsn_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010130-{{year}}12312230.nc",
-      "fieldname": "prsn",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "sf",
       "cname": "snow_ai"
     },
     {
-      "filename": "INPUT/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010000-{{year}}12312100.nc",
+      "filename": "INPUT/ERA5_June_2021.nc",
       "fieldname": "psl",
       "cname": "press_ai"
     },
     {
-      "filename": "INPUT/friver_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}0101-{{year}}1231.nc",
-      "fieldname": "friver",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "ro",
       "cname": "runof_ai",
       "domain": "land"
     },
     {
-      "filename": "INPUT/tas_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010000-{{year}}12312100.nc",
-      "fieldname": "tas",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "t2m",
       "cname": "tair_ai"
     },
     {
-      "filename": "INPUT/huss_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010000-{{year}}12312100.nc",
-      "fieldname": "huss",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "d2m",
       "cname": "qair_ai"
     },
     {
-      "filename": "INPUT/uas_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010000-{{year}}12312100.nc",
-      "fieldname": "uas",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "u10",
       "cname": "uwnd_ai"
     },
     {
-      "filename": "INPUT/vas_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}01010000-{{year}}12312100.nc",
-      "fieldname": "vas",
+      "filename": "INPUT/ERA5_June_2021.nc",
+      "fieldname": "v10",
       "cname": "vwnd_ai"
-    },
-    {
-      "filename": "INPUT/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}0101-{{year}}1231.nc",
-      "fieldname": "licalvf",
-      "cname": "licalvf_ai",
-      "domain": "land"
     }
   ]
 }

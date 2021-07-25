@@ -1,4 +1,4 @@
-# 1deg_jra55_iaf
+# 1deg_era5
 Standard configuration for 1 degree [ACCESS-OM2](https://github.com/COSIMA/access-om2) experiment (ACCESS-OM2) with JRA55-do interannual forcing (IAF).
 
 For usage instructions, see the [ACCESS-OM2 wiki](https://github.com/COSIMA/access-om2/wiki).
