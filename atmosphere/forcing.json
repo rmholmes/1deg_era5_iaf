@@ -1,56 +1,136 @@
 {
   "description": "ERA5 forcing",
+  "forcing_product_name": "ERA5",
   "inputs": [
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "ssrd",
-      "cname": "swfld_ai"
+        "coupling_field_name": "swfld_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/msdwswrf/{{year}}/msdwswrf_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "msdwswrf",
+                "units": "W m**-2"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "strd",
-      "cname": "lwfld_ai"
+        "coupling_field_name": "lwfld_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/msdwlwrf/{{year}}/msdwlwrf_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "msdwlwrf",
+                "units": "W m**-2"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "tp",
-      "cname": "rain_ai"
+        "coupling_field_name": "rain_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/crr/{{year}}/crr_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "crr",
+                "units": "kg m**-2 s**-1"
+            },
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/lsrr/{{year}}/lsrr_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "lsrr",
+                "units": "kg m**-2 s**-1"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "sf",
-      "cname": "snow_ai"
+        "coupling_field_name": "snow_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/msr/{{year}}/msr_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "msr",
+                "units": "kg m**-2 s**-1"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "psl",
-      "cname": "press_ai"
+        "coupling_field_name": "press_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/msl/{{year}}/msl_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "msl",
+                "units": "Pa"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "ro",
-      "cname": "runof_ai",
-      "domain": "land"
+        "coupling_field_name": "runof_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/mror/{{year}}/mror_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "mror",
+                "units": "kg m**-2 s**-1"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "t2m",
-      "cname": "tair_ai"
+        "coupling_field_name": "tair_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/2t/{{year}}/2t_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "t2m",
+                "units": "K"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "d2m",
-      "cname": "qair_ai"
+        "coupling_field_name": "qair_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/2d/{{year}}/2d_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "d2m",
+                "units": "K"
+            },
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/sp/{{year}}/sp_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "sp",
+                "units": "Pa"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "u10",
-      "cname": "uwnd_ai"
+        "coupling_field_name": "uwnd_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/10u/{{year}}/10u_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "u10",
+                "units": "m s**-1"
+            }
+        ]
     },
     {
-      "filename": "INPUT/ERA5_June_2021.nc",
-      "fieldname": "v10",
-      "cname": "vwnd_ai"
+        "coupling_field_name": "vwnd_ai",
+        "realm": "atmosphere",
+        "input_fields": [
+            {
+                "filename": "/g/data/rt52/era5/single-levels/reanalysis/10v/{{year}}/10v_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
+                "fieldname": "v10",
+                "units": "m s**-1"
+            }
+        ]
+    },
+    {
+        "coupling_field_name": "licalvf_ai",
+        "realm": "land",
+        "input_fields": [
+            {
+                "filename": "INPUT/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}0101-{{year}}1231.nc",
+                "fieldname": "licalvf"
+            }
+        ]
     }
   ]
 }
