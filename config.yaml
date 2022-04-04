@@ -27,6 +27,18 @@ submodels:
       exe: /home/156/aek156/github/COSIMA/access-om2/bin/yatm_61b1f38.exe
       input:
             - /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5
+            - /g/data/rt52/era5/single-levels/reanalysis/msdwswrf
+            - /g/data/rt52/era5/single-levels/reanalysis/msdwlwrf
+            - /g/data/rt52/era5/single-levels/reanalysis/crr
+            - /g/data/rt52/era5/single-levels/reanalysis/lsrr
+            - /g/data/rt52/era5/single-levels/reanalysis/msr
+            - /g/data/rt52/era5/single-levels/reanalysis/msl
+            - /g/data/rt52/era5/single-levels/reanalysis/mror
+            - /g/data/rt52/era5/single-levels/reanalysis/2t
+            - /g/data/rt52/era5/single-levels/reanalysis/2d
+            - /g/data/rt52/era5/single-levels/reanalysis/sp
+            - /g/data/rt52/era5/single-levels/reanalysis/10u
+            - /g/data/rt52/era5/single-levels/reanalysis/10v
             - /g/data/qv56/replicas/input4MIPs/CMIP6/OMIP/MRI/MRI-JRA55-do-1-4-0/landIce/day/licalvf/gr/v20190429
       ncpus: 1
 
