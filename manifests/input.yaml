@@ -30917,15 +30917,35 @@ work/atmosphere/INPUT/2021/sp_era5_oper_sfc_20211101-20211130.nc:
     binhash: 87a70249955c71776c9759a701b0f6f3
     md5: ba7376809074b024f3cb8f92177365ee
 work/atmosphere/INPUT/ERA5_MOM1_conserve.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_conserve.nc
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve.nc
   hashes:
-    binhash: 9af5ca3052f6d5ed5d9139a23f121cf5
+    binhash: 5a50a7d5f1889194277027784c61bcab
+    md5: cec39366ad4336193d1f77ab1a18b7ea
+work/atmosphere/INPUT/ERA5_MOM1_conserve2nd.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve2nd.nc
+  hashes:
+    binhash: c7cd98940b5b8922795ad7b971eb99cd
+    md5: dac9a47d119f23de33277389f2481f1b
+work/atmosphere/INPUT/ERA5_MOM1_conserve_nicOriginal.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve_nicOriginal.nc
+  hashes:
+    binhash: 5386a2ce289b3cface379d5828850697
     md5: 1bb0abf04369ea4ffe1d9da343d20f1f
 work/atmosphere/INPUT/ERA5_MOM1_patch.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_patch.nc
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch.nc
   hashes:
-    binhash: 2bab214c23d2eebc6d368e003fb641e6
+    binhash: a0edb27e5409692294017750a438018f
+    md5: 6ae190228329e5b0032853ca374067f6
+work/atmosphere/INPUT/ERA5_MOM1_patch_nicOriginal.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch_nicOriginal.nc
+  hashes:
+    binhash: 7021487d0eaac9c1bfd5d067ab29e60d
     md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
+work/atmosphere/INPUT/PET0.RegridWeightGen.Log:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/PET0.RegridWeightGen.Log
+  hashes:
+    binhash: 8fc1651ef6aa3ca14ecbc91f5ae29121
+    md5: 477611a8e0c5494929d54fea1ea09c81
 work/atmosphere/INPUT/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_19580101-19581231.nc:
   fullpath: /g/data/qv56/replicas/input4MIPs/CMIP6/OMIP/MRI/MRI-JRA55-do-1-4-0/landIce/day/licalvf/gr/v20190429/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_19580101-19581231.nc
   hashes:
@@ -31241,6 +31261,42 @@ work/atmosphere/INPUT/rmp_jrar_to_cict_CONSERV.nc:
   hashes:
     binhash: 6563b5e196a4ccb9a189dc533893bbb2
     md5: 10f0b5ea6b8102a03ad1140e5163a0f7
+work/ice/RESTART/grid.nc:
+  copy: true
+  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/grid.nc
+  hashes:
+    binhash: e7108317ae28b1f9ae77711728925cb6
+    md5: 1213e346055ee073fe33dc12578d99c6
+work/ice/RESTART/i2o.nc:
+  copy: true
+  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/i2o.nc
+  hashes:
+    binhash: 527d494c80b2a3418645b962fd8706d0
+    md5: c96e06c3c80c0f680545db59ed3349e5
+work/ice/RESTART/kmt.nc:
+  copy: true
+  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/kmt.nc
+  hashes:
+    binhash: 13a23d6d9331abc9d677c6fd466a4433
+    md5: 1f9806c646a620378e5257e480bc9df7
+work/ice/RESTART/monthly_sstsss.nc:
+  copy: true
+  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/monthly_sstsss.nc
+  hashes:
+    binhash: 66f44d84fada351d4ebf05f196762d8c
+    md5: 323d4c605f83f4d7d3126da70153c2ed
+work/ice/RESTART/o2i.nc:
+  copy: true
+  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/o2i.nc
+  hashes:
+    binhash: 56f258e931a8eda2fc42b3a315d485eb
+    md5: 3498246dcd7da40d3b8c6b4a908b260f
+work/ice/RESTART/u_star.nc:
+  copy: true
+  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/u_star.nc
+  hashes:
+    binhash: f93a19930c5c59e03751e70a123ab01f
+    md5: 68cf0ef92576f96ef085cd7f243d0c39
 work/ocean/INPUT/chl.nc:
   fullpath: /g/data/ik11/inputs/access-om2/input_20201102/mom_1deg/chl.nc
   hashes:

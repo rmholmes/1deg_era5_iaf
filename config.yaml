@@ -22,6 +22,7 @@ submodels:
       model: yatm
       exe: /g/data/ik11/inputs/access-om2/bin/yatm_61b1f38.exe
       input:
+            - /g/data/e14/rmh561/access-om2/input/ERA-5/
             - /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5
             - /g/data/rt52/era5/single-levels/reanalysis/msdwswrf
             - /g/data/rt52/era5/single-levels/reanalysis/msdwlwrf
