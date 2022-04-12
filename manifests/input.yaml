@@ -30919,33 +30919,38 @@ work/atmosphere/INPUT/2021/sp_era5_oper_sfc_20211101-20211130.nc:
 work/atmosphere/INPUT/ERA5_MOM1_conserve.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve.nc
   hashes:
-    binhash: 5a50a7d5f1889194277027784c61bcab
-    md5: cec39366ad4336193d1f77ab1a18b7ea
+    binhash: cd05dd26b2431f1165a9e41d9602d67c
+    md5: d72429996080ddf84fca53ed5e4945eb
 work/atmosphere/INPUT/ERA5_MOM1_conserve2nd.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve2nd.nc
   hashes:
-    binhash: c7cd98940b5b8922795ad7b971eb99cd
-    md5: dac9a47d119f23de33277389f2481f1b
-work/atmosphere/INPUT/ERA5_MOM1_conserve_nicOriginal.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve_nicOriginal.nc
-  hashes:
-    binhash: 5386a2ce289b3cface379d5828850697
-    md5: 1bb0abf04369ea4ffe1d9da343d20f1f
+    binhash: 7d8284dc17163642648290068af662f3
+    md5: 584ea9bf961626ec3909e3b4ed12d663
 work/atmosphere/INPUT/ERA5_MOM1_patch.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch.nc
   hashes:
-    binhash: a0edb27e5409692294017750a438018f
-    md5: 6ae190228329e5b0032853ca374067f6
-work/atmosphere/INPUT/ERA5_MOM1_patch_nicOriginal.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch_nicOriginal.nc
-  hashes:
-    binhash: 7021487d0eaac9c1bfd5d067ab29e60d
-    md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
+    binhash: 402c2734099321874b8836721700e98e
+    md5: 69c28857484a187198537841b3e19e47
 work/atmosphere/INPUT/PET0.RegridWeightGen.Log:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/PET0.RegridWeightGen.Log
   hashes:
-    binhash: 8fc1651ef6aa3ca14ecbc91f5ae29121
-    md5: 477611a8e0c5494929d54fea1ea09c81
+    binhash: febcfb467b20879470a86329b4abf769
+    md5: 9d05f4810fd2ce29b658ec077bbecc08
+work/atmosphere/INPUT/lat_flipud/ERA5_MOM1_conserve.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_conserve.nc
+  hashes:
+    binhash: 5651785d1d66a4df575dd76540378e17
+    md5: c748424f138d7cccc3b7beec1b7e8370
+work/atmosphere/INPUT/lat_flipud/ERA5_MOM1_conserve2nd.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_conserve2nd.nc
+  hashes:
+    binhash: e1163e9d1b0a034b7113186b3b0ffa2a
+    md5: 4e954885cdd4457f9f8dcd6ca149d10f
+work/atmosphere/INPUT/lat_flipud/ERA5_MOM1_patch.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_patch.nc
+  hashes:
+    binhash: a84a402422192020544da78c4d675c05
+    md5: b455cab6d7c56e4d1553af001f9372e2
 work/atmosphere/INPUT/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_19580101-19581231.nc:
   fullpath: /g/data/qv56/replicas/input4MIPs/CMIP6/OMIP/MRI/MRI-JRA55-do-1-4-0/landIce/day/licalvf/gr/v20190429/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_19580101-19581231.nc
   hashes:
@@ -31256,6 +31261,36 @@ work/atmosphere/INPUT/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-
   hashes:
     binhash: b695aa7c1603eec26fe93674bf2ccfe5
     md5: 7d09d06ec59b71f0dffe288f7507b06d
+work/atmosphere/INPUT/old/ERA5_MOM1_conserve.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve.nc
+  hashes:
+    binhash: 5a50a7d5f1889194277027784c61bcab
+    md5: cec39366ad4336193d1f77ab1a18b7ea
+work/atmosphere/INPUT/old/ERA5_MOM1_conserve2nd.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve2nd.nc
+  hashes:
+    binhash: c7cd98940b5b8922795ad7b971eb99cd
+    md5: dac9a47d119f23de33277389f2481f1b
+work/atmosphere/INPUT/old/ERA5_MOM1_conserve_nicOriginal.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve_nicOriginal.nc
+  hashes:
+    binhash: 5386a2ce289b3cface379d5828850697
+    md5: 1bb0abf04369ea4ffe1d9da343d20f1f
+work/atmosphere/INPUT/old/ERA5_MOM1_patch.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_patch.nc
+  hashes:
+    binhash: a0edb27e5409692294017750a438018f
+    md5: 6ae190228329e5b0032853ca374067f6
+work/atmosphere/INPUT/old/ERA5_MOM1_patch_nicOriginal.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_patch_nicOriginal.nc
+  hashes:
+    binhash: 7021487d0eaac9c1bfd5d067ab29e60d
+    md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
+work/atmosphere/INPUT/old/PET0.RegridWeightGen.Log:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/PET0.RegridWeightGen.Log
+  hashes:
+    binhash: 8fc1651ef6aa3ca14ecbc91f5ae29121
+    md5: 477611a8e0c5494929d54fea1ea09c81
 work/atmosphere/INPUT/rmp_jrar_to_cict_CONSERV.nc:
   fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/rmp_jrar_to_cict_CONSERV.nc
   hashes:
