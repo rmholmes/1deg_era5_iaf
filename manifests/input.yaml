@@ -30917,20 +30917,30 @@ work/atmosphere/INPUT/2021/sp_era5_oper_sfc_20211101-20211130.nc:
     binhash: 87a70249955c71776c9759a701b0f6f3
     md5: ba7376809074b024f3cb8f92177365ee
 work/atmosphere/INPUT/ERA5_MOM1_conserve.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_conserve.nc
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve.nc
   hashes:
-    binhash: 9af5ca3052f6d5ed5d9139a23f121cf5
-    md5: 1bb0abf04369ea4ffe1d9da343d20f1f
+    binhash: b9d28101ccc3821fab8320579626812b
+    md5: e5c1c2ca736b4d394fdac397c46e7a21
 work/atmosphere/INPUT/ERA5_MOM1_patch.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_patch.nc
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch.nc
   hashes:
-    binhash: 2bab214c23d2eebc6d368e003fb641e6
-    md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
+    binhash: e450e9fdae1056617f2363522d41c38e
+    md5: e5c1c2ca736b4d394fdac397c46e7a21
 work/atmosphere/INPUT/PET0.RegridWeightGen.Log:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/PET0.RegridWeightGen.Log
   hashes:
     binhash: ffd3c47e6c1417cc8595e470ddae1fe3
     md5: 08c82ec3a08e47ccc8b2b5b29117d3bc
+work/atmosphere/INPUT/common_1deg_era5/rmp_jrar_to_cict_CONSERV.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/common_1deg_era5/rmp_jrar_to_cict_CONSERV.nc
+  hashes:
+    binhash: 6563b5e196a4ccb9a189dc533893bbb2
+    md5: 10f0b5ea6b8102a03ad1140e5163a0f7
+work/atmosphere/INPUT/era5_mom10_wts.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/era5_mom10_wts.nc
+  hashes:
+    binhash: a881ab6afd66ab659457c62abd66a7b9
+    md5: e5c1c2ca736b4d394fdac397c46e7a21
 work/atmosphere/INPUT/lat_flipud/ERA5_MOM1_conserve.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_conserve.nc
   hashes:
