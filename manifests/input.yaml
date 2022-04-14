@@ -2,20 +2,70 @@ format: yamanifest
 version: 1.0
 ---
 work/INPUT/ERA5_MOM1_conserve.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_conserve.nc
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve.nc
   hashes:
-    binhash: 9af5ca3052f6d5ed5d9139a23f121cf5
-    md5: 1bb0abf04369ea4ffe1d9da343d20f1f
+    binhash: b9d28101ccc3821fab8320579626812b
+    md5: e5c1c2ca736b4d394fdac397c46e7a21
 work/INPUT/ERA5_MOM1_patch.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_patch.nc
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch.nc
   hashes:
-    binhash: 2bab214c23d2eebc6d368e003fb641e6
+    binhash: e450e9fdae1056617f2363522d41c38e
+    md5: e5c1c2ca736b4d394fdac397c46e7a21
+work/INPUT/PET0.RegridWeightGen.Log:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/PET0.RegridWeightGen.Log
+  hashes:
+    binhash: ffd3c47e6c1417cc8595e470ddae1fe3
+    md5: 08c82ec3a08e47ccc8b2b5b29117d3bc
+work/INPUT/era5_mom10_wts.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/era5_mom10_wts.nc
+  hashes:
+    binhash: a881ab6afd66ab659457c62abd66a7b9
+    md5: e5c1c2ca736b4d394fdac397c46e7a21
+work/INPUT/lat_flipud/ERA5_MOM1_conserve.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_conserve.nc
+  hashes:
+    binhash: 5651785d1d66a4df575dd76540378e17
+    md5: c748424f138d7cccc3b7beec1b7e8370
+work/INPUT/lat_flipud/ERA5_MOM1_conserve2nd.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_conserve2nd.nc
+  hashes:
+    binhash: e1163e9d1b0a034b7113186b3b0ffa2a
+    md5: 4e954885cdd4457f9f8dcd6ca149d10f
+work/INPUT/lat_flipud/ERA5_MOM1_patch.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_patch.nc
+  hashes:
+    binhash: a84a402422192020544da78c4d675c05
+    md5: b455cab6d7c56e4d1553af001f9372e2
+work/INPUT/old/ERA5_MOM1_conserve.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve.nc
+  hashes:
+    binhash: 5a50a7d5f1889194277027784c61bcab
+    md5: cec39366ad4336193d1f77ab1a18b7ea
+work/INPUT/old/ERA5_MOM1_conserve2nd.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve2nd.nc
+  hashes:
+    binhash: c7cd98940b5b8922795ad7b971eb99cd
+    md5: dac9a47d119f23de33277389f2481f1b
+work/INPUT/old/ERA5_MOM1_conserve_nicOriginal.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve_nicOriginal.nc
+  hashes:
+    binhash: 5386a2ce289b3cface379d5828850697
+    md5: 1bb0abf04369ea4ffe1d9da343d20f1f
+work/INPUT/old/ERA5_MOM1_patch.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_patch.nc
+  hashes:
+    binhash: a0edb27e5409692294017750a438018f
+    md5: 6ae190228329e5b0032853ca374067f6
+work/INPUT/old/ERA5_MOM1_patch_nicOriginal.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_patch_nicOriginal.nc
+  hashes:
+    binhash: 7021487d0eaac9c1bfd5d067ab29e60d
     md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
-work/INPUT/rmp_jrar_to_cict_CONSERV.nc:
-  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/rmp_jrar_to_cict_CONSERV.nc
+work/INPUT/old/PET0.RegridWeightGen.Log:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/PET0.RegridWeightGen.Log
   hashes:
-    binhash: 6563b5e196a4ccb9a189dc533893bbb2
-    md5: 10f0b5ea6b8102a03ad1140e5163a0f7
+    binhash: 8fc1651ef6aa3ca14ecbc91f5ae29121
+    md5: 477611a8e0c5494929d54fea1ea09c81
 work/atmosphere/INPUT/1979/10u_era5_oper_sfc_19790101-19790131.nc:
   fullpath: /g/data/rt52/era5/single-levels/reanalysis/10u/1979/10u_era5_oper_sfc_19790101-19790131.nc
   hashes:
@@ -30917,45 +30967,15 @@ work/atmosphere/INPUT/2021/sp_era5_oper_sfc_20211101-20211130.nc:
     binhash: 87a70249955c71776c9759a701b0f6f3
     md5: ba7376809074b024f3cb8f92177365ee
 work/atmosphere/INPUT/ERA5_MOM1_conserve.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_conserve.nc
+  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_conserve.nc
   hashes:
-    binhash: b9d28101ccc3821fab8320579626812b
-    md5: e5c1c2ca736b4d394fdac397c46e7a21
+    binhash: 9af5ca3052f6d5ed5d9139a23f121cf5
+    md5: 1bb0abf04369ea4ffe1d9da343d20f1f
 work/atmosphere/INPUT/ERA5_MOM1_patch.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch.nc
+  fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/ERA5_MOM1_patch.nc
   hashes:
-    binhash: e450e9fdae1056617f2363522d41c38e
-    md5: e5c1c2ca736b4d394fdac397c46e7a21
-work/atmosphere/INPUT/PET0.RegridWeightGen.Log:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/PET0.RegridWeightGen.Log
-  hashes:
-    binhash: ffd3c47e6c1417cc8595e470ddae1fe3
-    md5: 08c82ec3a08e47ccc8b2b5b29117d3bc
-work/atmosphere/INPUT/common_1deg_era5/rmp_jrar_to_cict_CONSERV.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/common_1deg_era5/rmp_jrar_to_cict_CONSERV.nc
-  hashes:
-    binhash: 6563b5e196a4ccb9a189dc533893bbb2
-    md5: 10f0b5ea6b8102a03ad1140e5163a0f7
-work/atmosphere/INPUT/era5_mom10_wts.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/era5_mom10_wts.nc
-  hashes:
-    binhash: a881ab6afd66ab659457c62abd66a7b9
-    md5: e5c1c2ca736b4d394fdac397c46e7a21
-work/atmosphere/INPUT/lat_flipud/ERA5_MOM1_conserve.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_conserve.nc
-  hashes:
-    binhash: 5651785d1d66a4df575dd76540378e17
-    md5: c748424f138d7cccc3b7beec1b7e8370
-work/atmosphere/INPUT/lat_flipud/ERA5_MOM1_conserve2nd.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_conserve2nd.nc
-  hashes:
-    binhash: e1163e9d1b0a034b7113186b3b0ffa2a
-    md5: 4e954885cdd4457f9f8dcd6ca149d10f
-work/atmosphere/INPUT/lat_flipud/ERA5_MOM1_patch.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/lat_flipud/ERA5_MOM1_patch.nc
-  hashes:
-    binhash: a84a402422192020544da78c4d675c05
-    md5: b455cab6d7c56e4d1553af001f9372e2
+    binhash: 2bab214c23d2eebc6d368e003fb641e6
+    md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
 work/atmosphere/INPUT/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_19580101-19581231.nc:
   fullpath: /g/data/qv56/replicas/input4MIPs/CMIP6/OMIP/MRI/MRI-JRA55-do-1-4-0/landIce/day/licalvf/gr/v20190429/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_19580101-19581231.nc
   hashes:
@@ -31266,36 +31286,6 @@ work/atmosphere/INPUT/licalvf_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-
   hashes:
     binhash: b695aa7c1603eec26fe93674bf2ccfe5
     md5: 7d09d06ec59b71f0dffe288f7507b06d
-work/atmosphere/INPUT/old/ERA5_MOM1_conserve.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve.nc
-  hashes:
-    binhash: 5a50a7d5f1889194277027784c61bcab
-    md5: cec39366ad4336193d1f77ab1a18b7ea
-work/atmosphere/INPUT/old/ERA5_MOM1_conserve2nd.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve2nd.nc
-  hashes:
-    binhash: c7cd98940b5b8922795ad7b971eb99cd
-    md5: dac9a47d119f23de33277389f2481f1b
-work/atmosphere/INPUT/old/ERA5_MOM1_conserve_nicOriginal.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_conserve_nicOriginal.nc
-  hashes:
-    binhash: 5386a2ce289b3cface379d5828850697
-    md5: 1bb0abf04369ea4ffe1d9da343d20f1f
-work/atmosphere/INPUT/old/ERA5_MOM1_patch.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_patch.nc
-  hashes:
-    binhash: a0edb27e5409692294017750a438018f
-    md5: 6ae190228329e5b0032853ca374067f6
-work/atmosphere/INPUT/old/ERA5_MOM1_patch_nicOriginal.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_patch_nicOriginal.nc
-  hashes:
-    binhash: 7021487d0eaac9c1bfd5d067ab29e60d
-    md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
-work/atmosphere/INPUT/old/PET0.RegridWeightGen.Log:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/PET0.RegridWeightGen.Log
-  hashes:
-    binhash: 8fc1651ef6aa3ca14ecbc91f5ae29121
-    md5: 477611a8e0c5494929d54fea1ea09c81
 work/atmosphere/INPUT/rmp_jrar_to_cict_CONSERV.nc:
   fullpath: /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5/rmp_jrar_to_cict_CONSERV.nc
   hashes:
