@@ -4,13 +4,23 @@ version: 1.0
 work/INPUT/ERA5_MOM1_patch.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch.nc
   hashes:
-    binhash: e450e9fdae1056617f2363522d41c38e
-    md5: e5c1c2ca736b4d394fdac397c46e7a21
+    binhash: 57aa08f3996d5590f21805b04008c79e
+    md5: 5ffdf77bb57e10e3ede874752e4f6c6d
+work/INPUT/ERA5_MOM1_patch_mineNoChanges.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch_mineNoChanges.nc
+  hashes:
+    binhash: b304f91035a139b990a017c530042644
+    md5: 5ae587eea05c39268ce19c447ffb169b
+work/INPUT/ERA5_MOM1_patch_nicOriginal.nc:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/ERA5_MOM1_patch_nicOriginal.nc
+  hashes:
+    binhash: 7021487d0eaac9c1bfd5d067ab29e60d
+    md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
 work/INPUT/PET0.RegridWeightGen.Log:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/PET0.RegridWeightGen.Log
   hashes:
-    binhash: 7fdf22bca09f3f11ce7b0a4f33c075b4
-    md5: c7085a34b86dd8ca11d79e03afcda431
+    binhash: b449575fb1b49f074f41ca515cbe497c
+    md5: b0def972ac5dbf6c146b70138b09c96d
 work/INPUT/era5_mom10_wts.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/era5_mom10_wts.nc
   hashes:
@@ -51,11 +61,6 @@ work/INPUT/old/ERA5_MOM1_patch.nc:
   hashes:
     binhash: a0edb27e5409692294017750a438018f
     md5: 6ae190228329e5b0032853ca374067f6
-work/INPUT/old/ERA5_MOM1_patch_nicOriginal.nc:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/ERA5_MOM1_patch_nicOriginal.nc
-  hashes:
-    binhash: 7021487d0eaac9c1bfd5d067ab29e60d
-    md5: 8352ce46dfb3cf6f1cc6b118b8b5dde2
 work/INPUT/old/PET0.RegridWeightGen.Log:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/old/PET0.RegridWeightGen.Log
   hashes:
