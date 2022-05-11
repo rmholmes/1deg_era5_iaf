@@ -133,12 +133,8 @@ MAPPING
 ##########
 # Field 06 : runoff. Runoff is passed on the destination grid.
 ##########
-runof_ai runof_i -1 -1 1 NA EXPORTED
+runof_ai runof_i -2 -1 0 NA IGNORED
 NA NA
-P  0  P  0
-#
-MAPPING
-../INPUT/ERA5_MOM1_patch.nc dst
 ##########
 # Field 07 : near surface (2m) air temp
 ##########
