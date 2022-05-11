@@ -63,17 +63,6 @@
         ]
     },
     {
-        "coupling_field_name": "runof_ai",
-        "realm": "atmosphere",
-        "input_fields": [
-            {
-                "filename": "INPUT/{{year}}/mror_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
-                "fieldname": "mror",
-                "units": "kg m**-2 s**-1"
-            }
-        ]
-    },
-    {
         "coupling_field_name": "tair_ai",
         "realm": "atmosphere",
         "input_fields": [
@@ -119,6 +108,16 @@
                 "filename": "INPUT/{{year}}/10v_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
                 "fieldname": "v10",
                 "units": "m s**-1"
+            }
+        ]
+    },
+    {
+        "coupling_field_name": "runof_ai",
+        "realm": "land",
+        "input_fields": [
+            {
+                "filename": "INPUT/friver_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_{{year}}0101-{{year}}1231.nc",
+                "fieldname": "friver"
             }
         ]
     },
