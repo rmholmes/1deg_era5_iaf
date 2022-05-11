@@ -21,26 +21,6 @@ work/INPUT/PET0.RegridWeightGen.Log:
   hashes:
     binhash: b449575fb1b49f074f41ca515cbe497c
     md5: b0def972ac5dbf6c146b70138b09c96d
-work/INPUT/RYF/ERA5_RYF.e38802330:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/ERA5_RYF.e38802330
-  hashes:
-    binhash: 180179cb3190b7e37014c1bf26ecc46a
-    md5: 3a82ba1e949570b3f32c112b21380f93
-work/INPUT/RYF/ERA5_RYF.e38806038:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/ERA5_RYF.e38806038
-  hashes:
-    binhash: 92c014033dbeb8bd9c0193ebd996a0c1
-    md5: d41d8cd98f00b204e9800998ecf8427e
-work/INPUT/RYF/ERA5_RYF.o38802330:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/ERA5_RYF.o38802330
-  hashes:
-    binhash: 466dda4d7e29d178162250a8c4c5df0d
-    md5: 591b4382b3fee45d930a26ae96362500
-work/INPUT/RYF/ERA5_RYF.o38806038:
-  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/ERA5_RYF.o38806038
-  hashes:
-    binhash: f2668d47f4504a613f507317ab48a617
-    md5: 39d4eeba5e70764986714ceb8721361f
 work/INPUT/RYF/RYF.10u.1990_1991.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/RYF.10u.1990_1991.nc
   hashes:
@@ -114,8 +94,8 @@ work/INPUT/RYF/RYF.sp.1990_1991.nc:
 work/INPUT/RYF/make_ryf.py:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/make_ryf.py
   hashes:
-    binhash: 1c1d5c2085abe3ee439b1be8e397034a
-    md5: 254a4b54d9842f417508d456f9987441
+    binhash: 199f5da558254bf29642b4d6cf06423c
+    md5: 4b8638682e9d138ce7e09e28e1de576b
 work/INPUT/RYF/make_ryf.sub:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/make_ryf.sub
   hashes:
@@ -309,13 +289,38 @@ work/INPUT/RYF/make_ryf/README.md:
 work/INPUT/RYF/make_ryf/make_ryf.py:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/make_ryf/make_ryf.py
   hashes:
-    binhash: 8773c0487675d50effa8fdf782dee63f
-    md5: 67d33ba6ad113c574f1eba0956477c8b
+    binhash: 626ecca0fb364be2639ec8ca659d5ccb
+    md5: ea6d80e6f9aba2483411d9d310fcfdd0
 work/INPUT/RYF/make_ryf/make_ryf.sub:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/make_ryf/make_ryf.sub
   hashes:
     binhash: df6c3487d7eb6bda3dfcbc5da662bc6b
     md5: 452861b722edf51a0346fb1e8ce96c9c
+work/INPUT/RYF/testing/.ipynb_checkpoints/make_ryf-checkpoint.ipynb:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/testing/.ipynb_checkpoints/make_ryf-checkpoint.ipynb
+  hashes:
+    binhash: 589b6e7f09aa69e9788399993058150a
+    md5: 8e67118e3184a1b927cf16bd9d7e9971
+work/INPUT/RYF/testing/.ipynb_checkpoints/make_ryf-checkpoint.py:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/testing/.ipynb_checkpoints/make_ryf-checkpoint.py
+  hashes:
+    binhash: 27e0aca7369404d48bc208c59f8094c8
+    md5: 5cdff96dde255bfc4d58a25ed8b36b15
+work/INPUT/RYF/testing/make_ryf.ipynb:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/testing/make_ryf.ipynb
+  hashes:
+    binhash: 0829230a3937b56ccbee13bad7130c8c
+    md5: 188b0e8c6086c8c8d9f049cc6bb34d88
+work/INPUT/RYF/testing/make_ryf.py:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/testing/make_ryf.py
+  hashes:
+    binhash: add3819df37d43a8b97638ab8debf5b0
+    md5: dbe5a710fd7848d2b63025730d548cb7
+work/INPUT/RYF/testing/make_ryf.sub:
+  fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/RYF/testing/make_ryf.sub
+  hashes:
+    binhash: 5f8b64cab4fc895d9f97fe0e1fc3d98f
+    md5: f8b29eb05231e8e1e564954f8c0c177b
 work/INPUT/era5_mom10_wts.nc:
   fullpath: /g/data/e14/rmh561/access-om2/input/ERA-5/era5_mom10_wts.nc
   hashes:
@@ -29431,42 +29436,6 @@ work/atmosphere/INPUT/rmp_jrar_to_cict_CONSERV.nc:
   hashes:
     binhash: 6563b5e196a4ccb9a189dc533893bbb2
     md5: 10f0b5ea6b8102a03ad1140e5163a0f7
-work/ice/RESTART/grid.nc:
-  copy: true
-  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/grid.nc
-  hashes:
-    binhash: e7108317ae28b1f9ae77711728925cb6
-    md5: 1213e346055ee073fe33dc12578d99c6
-work/ice/RESTART/i2o.nc:
-  copy: true
-  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/i2o.nc
-  hashes:
-    binhash: 527d494c80b2a3418645b962fd8706d0
-    md5: c96e06c3c80c0f680545db59ed3349e5
-work/ice/RESTART/kmt.nc:
-  copy: true
-  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/kmt.nc
-  hashes:
-    binhash: 13a23d6d9331abc9d677c6fd466a4433
-    md5: 1f9806c646a620378e5257e480bc9df7
-work/ice/RESTART/monthly_sstsss.nc:
-  copy: true
-  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/monthly_sstsss.nc
-  hashes:
-    binhash: 66f44d84fada351d4ebf05f196762d8c
-    md5: 323d4c605f83f4d7d3126da70153c2ed
-work/ice/RESTART/o2i.nc:
-  copy: true
-  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/o2i.nc
-  hashes:
-    binhash: 56f258e931a8eda2fc42b3a315d485eb
-    md5: 3498246dcd7da40d3b8c6b4a908b260f
-work/ice/RESTART/u_star.nc:
-  copy: true
-  fullpath: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg/u_star.nc
-  hashes:
-    binhash: f93a19930c5c59e03751e70a123ab01f
-    md5: 68cf0ef92576f96ef085cd7f243d0c39
 work/ocean/INPUT/chl.nc:
   fullpath: /g/data/ik11/inputs/access-om2/input_20201102/mom_1deg/chl.nc
   hashes:
