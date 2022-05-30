@@ -16,7 +16,7 @@ mem: 1000GB
 # Model configuration
 name: common
 model: access-om2
-input: /g/data/e14/rmh561/access-om2/input/ERA-5
+input: /g/data/e14/rmh561/access-om2/input/ERA-5/remap/prod
 submodels:
     - name: atmosphere
       model: yatm
