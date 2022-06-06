@@ -1,0 +1,126 @@
+R. Holmes notes for getting ERA5 1deg config testing.
+2022
+** Initial setup:
+See git
+
+Problems encountered:
+- Can't run with time step >3600 (1 hr, ERA-5 forcing time step)
+- Can't start in 1979-01-01 because of bad timing (start 1980 first).
+- Can't deal with leap years (issue with libaccessom2 that has now
+  been fixed by Micael).
+
+- Regridding weights appear to flip latitude and offset longitude
+  (https://github.com/COSIMA/esmgrids/issues/4).
+
+** Generating ATM -> ICE OASIS, regridding weights
+
+With Andrew/Nic's updated make_regrid_weights.py that includes ERA5
+options:
+
+In /g/data/e14/rmh561/access-om2/input/ERA-5 do:
+
+module purge
+module load openmpi
+module load nco
+module load esmf
+module use /g/data/hh5/public/modules
+module load conda/analysis3
+
+and then:
+../../tools/make_remap_weights.py --accessom2_input_dir ../ --atm_forcing_file /g/data/rt52/era5/single-levels/reanalysis/10u/1980/10u_era5_oper_sfc_19800101-19800131.nc --atm ERA5 --ocean MOM1 --npes 1
+
+As a first test, I'm rerunning the results I had before with my
+regridding files to see if there are any differences - this checks
+out.
+
+Andrew's changes do not work for me.
+
+Now trying to fix the latitude flipped stuff. Successfully ran it by
+just removing the warnings - which don't work for ERA-5 flipped
+latitude anyway.
+
+No matter what I do in era5_grid.py the result seems to be the
+same. I've tried adding 90, 180 and 360 to x_t with no
+results. Similarly undoing the flip on y_t seems not to do anything.
+
+Russ says that they have always flipped the data back when using ERA
+Interim or ERA5 data.
+
+I wasn't using my new remap files because they should be through the
+common input files not the "atmosphere" ones. Corrected and working
+through again...
+
+Nic's files: Checks and yes it works and gives me the same changes as
+before (8528adfe1df71 commit).
+
+My generation (with above command on git branch of access-om2
+update-esmgrids-preRussCorrection): Works and fixes the longitude
+shift!!
+
+Removing the `flipud` on the latitude fixes the latitude error.
+
+So now we proceed further...
+
+** With fixed regridding weights...
+
+With fixed regridding weights I can get to October 31st of year 2 and
+then it blows-up (1982-10-31). Have dropped the time step to 1800s and
+doesn't make a difference.
+
+** Runoff fixed
+
+We were trying to use the wrong ERA-5 variable for river runoff. Now
+we've reverted to using the JRA-55 friver variable (required some
+namcouple reversions as well). This seems to have fixed the runoff
+issues.
+
+Now (also with the leap year fix in libaccessom2) I can get to
+1982-11-01 starting from 1980-01-01 and then it blows up with temp out
+of range. Clearly there is an issue at this time.
+
+** RYF files:
+These work, but are very slow, probably because the time chunking is
+bad (760 something). 
+
+Aidan rewrote the RYF processing script and it works wayyy better. Run
+times are now ->
+
+** Single-year runtimes (1-degree):
+1deg JRA-55 RYF9091 and IAF:  ~15 mins
+1deg ERA-5 IAF: ~60 mins
+1deg ERA-5 RYF (badly chunked): ~132 mins
+1deg ERA-5 RYF (well chunked/uncompressed): ~40 mins
+025deg JRA-55 RYF9091: ~97 mins
+025deg ERA-5 RYF9091: ~113 mins
+
+** IAF runs:
+Starting in 1980-01-01 I can't get past 1982-11-01
+Starting in 1983-01-01 I can't get past 1984-09-01
+Starting in 1990-01-01 I can't get past 1991-07-01
+Starting in 2000-01-01 I can't get past 2001-02-01
+Starting in 2005-01-01 I can't get past 2006-07-01
+Why is it always on the 01 day?
+** 1/4-degree development
+
+Started from latest JRA55 025 RYF config and changed according to
+1deg_jra55_ryf and 1deg_era5_ryf differences.
+
+Generated remapping weights by
+
+cd /g/data/e14/rmh561/access-om2/input/ERA-5/remap
+
+module purge
+module load openmpi
+module load nco
+module load esmf
+module use /g/data/hh5/public/modules
+module load conda/analysis3
+
+../../../tools/make_remap_weights.py --accessom2_input_dir /g/data/ik11/inputs/access-om2/input_20201102/ --atm_forcing_file /g/data/rt52/era5/single-levels/reanalysis/10u/1980/10u_era5_oper_sfc_19800101-19800131.nc --atm ERA5 --ocean MOM025 --npes 1
+
+NOTE!!: accessom2_input_dir has to match the input directory you're
+using for MOM in config.yaml. Otherwise the masks can be different and
+this changes the remapping file of course...
+
+That seems to work fine. Run is stable. Had to reduce time step at one
+point (year 18ish?) to get past a ice thermo issue but otherwise fine.
