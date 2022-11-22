@@ -258,6 +258,8 @@ diag_table:
             surface_salt:
             usurf:
             vsurf:
+            tau_x:
+            tau_y:
     'daily 2d maximum fields':
         defaults:  # these can be overridden for individual fields below
             file_name_dimension: 2d  # descriptor for filename, e.g. 3d, 2d, scalar
@@ -268,6 +270,7 @@ diag_table:
             bottom_temp:
             sea_level:
             surface_pot_temp:
+            tau_x:
     'daily 2d minimum fields':
         defaults:  # these can be overridden for individual fields below
             file_name_dimension: 2d  # descriptor for filename, e.g. 3d, 2d, scalar
@@ -276,6 +279,7 @@ diag_table:
             reduction_method: min  # mean, snap, rms, pow##, min, max, or diurnal##
         fields:
             surface_pot_temp:  # min for comparison with foundation temperature
+            tau_x:
     'daily scalar snapshots':  # snapshots of global integrals give better parallel performance
         defaults:  # these can be overridden for individual fields below
             file_name_dimension: scalar  # descriptor for filename, e.g. 3d, 2d, scalar

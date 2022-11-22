@@ -104,7 +104,47 @@ Why is it always on the 01 day?
 Revisiting this November 2022:
 Starting from 1980-01-01 with clean setup, I get temperature out of
 range errors that blow up in 1981-11-01, within the first
-hour. Outputing tracer diagnostics shows that 
+hour. Outputing tracer diagnostics shows that this comes up very
+suddenly, only in November.
+
+The add_offset and scale_factor values of the t2m files change every
+month. So when you look at multiple months of data with ncview, it
+uses the scale_factor and add_offset (presumably) of the first month
+only, and thus each month after that is wrong and there are jumps at
+the end/start of month.
+
+xarray doesn't have this problem as it correctly uses each month's
+scale_factor and add_offset.
+
+The question is - what does access-om2 do? Are the dates above where
+the data goes wrong particularly bad add_offset jumps? is there some
+problem with interpolation across the ends of the months? Or is it
+unrelated to this issue?
+
+The problem is even worse for tau_x. E.g., the add_offset's for 1982
+are:
+                u10:add_offset = -1.10877391482281 ;
+                u10:add_offset = -1.1215841955099 ;
+                u10:add_offset = 0.0125949346145859 ;
+                u10:add_offset = -1.53913651675738 ;
+                u10:add_offset = -2.75968769557738 ;
+                u10:add_offset = -2.13865433273629 ;
+                u10:add_offset = -1.76729693885812 ;
+                u10:add_offset = -3.29618059715136 ;
+                u10:add_offset = -16.5649987171096 ;
+                u10:add_offset = -57.4015155174217 ;
+                u10:add_offset = -2.02439977535769 ;
+                u10:add_offset = 0.954945670431101 ;
+
+The jump from Oct to Nov is ridiculous in ncview time series (see
+screenshot). Is the same true for the other dates - not really, at
+least in u10 it's not obvious. But perhaps all it needs is a big jump
+in just one particular variable?
+
+Or, is it that there is something in the data that causes these large
+add_offset values??
+
+1984-09:
 
 ** 1/4-degree development
 

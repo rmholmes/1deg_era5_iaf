@@ -331,6 +331,12 @@ ACCESS-OM2
 "ocean-2d-vsurf-1-daily-mean-ym%4yr%2mo", 1, "days", 1, "days", "time", 1, "years"
 "ocean_model", "vsurf", "vsurf", "ocean-2d-vsurf-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
 
+"ocean-2d-tau_x-1-daily-mean-ym%4yr%2mo", 1, "days", 1, "days", "time", 1, "years"
+"ocean_model", "tau_x", "tau_x", "ocean-2d-tau_x-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
+
+"ocean-2d-tau_y-1-daily-mean-ym%4yr%2mo", 1, "days", 1, "days", "time", 1, "years"
+"ocean_model", "tau_y", "tau_y", "ocean-2d-tau_y-1-daily-mean-ym%4yr%2mo", "all", "average", "none", 2
+
 
 # daily 2d maximum fields
 
@@ -343,11 +349,17 @@ ACCESS-OM2
 "ocean-2d-surface_pot_temp-1-daily-max-ym%4yr%2mo", 1, "days", 1, "days", "time", 1, "years"
 "ocean_model", "surface_pot_temp", "surface_pot_temp", "ocean-2d-surface_pot_temp-1-daily-max-ym%4yr%2mo", "all", "max", "none", 2
 
+"ocean-2d-tau_x-1-daily-max-ym%4yr%2mo", 1, "days", 1, "days", "time", 1, "years"
+"ocean_model", "tau_x", "tau_x", "ocean-2d-tau_x-1-daily-max-ym%4yr%2mo", "all", "max", "none", 2
+
 
 # daily 2d minimum fields
 
 "ocean-2d-surface_pot_temp-1-daily-min-ym%4yr%2mo", 1, "days", 1, "days", "time", 1, "years"
 "ocean_model", "surface_pot_temp", "surface_pot_temp", "ocean-2d-surface_pot_temp-1-daily-min-ym%4yr%2mo", "all", "min", "none", 2
+
+"ocean-2d-tau_x-1-daily-min-ym%4yr%2mo", 1, "days", 1, "days", "time", 1, "years"
+"ocean_model", "tau_x", "tau_x", "ocean-2d-tau_x-1-daily-min-ym%4yr%2mo", "all", "min", "none", 2
 
 
 # daily scalar snapshots
