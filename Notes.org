@@ -144,7 +144,14 @@ in just one particular variable?
 Or, is it that there is something in the data that causes these large
 add_offset values??
 
-1984-09:
+Looking around, I found an even more obvious jump going from
+March-April 1980. This is caused by a large shock in zonal wind
+stress. The add_offset is -32.1 in March and 0.0something in April. If
+I copy the March 10u file and change the packing to be consistent with
+the April file then the jump becomes much smaller. So it's clearly a
+packing issue. Xarray doesn't seem to have the problem (reading in the
+10u from the altered packing files gives exactly the same as the
+unaltered files).
 
 ** 1/4-degree development
 
