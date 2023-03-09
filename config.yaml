@@ -20,7 +20,7 @@ input: /g/data/e14/rmh561/access-om2/input/ERA-5/remap/prod
 submodels:
     - name: atmosphere
       model: yatm
-      exe: /g/data/e14/rmh561/access-om2/bin/yatm_b7d9614.exe
+      exe: /g/data/e14/rmh561/access-om2/bin/yatm_bfa2062.exe
       input:
             - /g/data/ik11/inputs/access-om2/input_20210915/common_1deg_era5
             - /g/data/rt52/era5/single-levels/reanalysis/msdwswrf
@@ -40,13 +40,13 @@ submodels:
 
     - name: ocean
       model: mom
-      exe: /g/data/e14/rmh561/access-om2/bin/fms_ACCESS-OM_9b8ec93_libaccessom2_b7d9614.x
+      exe: /g/data/e14/rmh561/access-om2/bin/fms_ACCESS-OM_9b8ec93_libaccessom2_bfa2062.x
       input: /g/data/ik11/inputs/access-om2/input_20201102/mom_1deg
       ncpus: 216
 
     - name: ice
       model: cice5
-      exe: /g/data/e14/rmh561/access-om2/bin/cice_auscom_360x300_24p_1a98130_libaccessom2_b7d9614.exe
+      exe: /g/data/e14/rmh561/access-om2/bin/cice_auscom_360x300_24p_1a98130_libaccessom2_bfa2062.exe
       input: /g/data/ik11/inputs/access-om2/input_20201102/cice_1deg
       ncpus: 24
 
