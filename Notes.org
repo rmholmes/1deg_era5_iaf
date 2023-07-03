@@ -1,16 +1,15 @@
-R. Holmes notes for getting ERA5 1deg config testing.
-2022
+R. Holmes notes for getting ERA5 forced ACCESS-OM2 config working.
+2022-2023
+
 ** Initial setup:
 See git
 
 Problems encountered:
 - Can't run with time step >3600 (1 hr, ERA-5 forcing time step)
 - Can't start in 1979-01-01 because of bad timing (start 1980 first).
-- Can't deal with leap years (issue with libaccessom2 that has now
-  been fixed by Micael).
+- Can't deal with leap years (issue with libaccessom2 that has now been fixed by Micael).
 
-- Regridding weights appear to flip latitude and offset longitude
-  (https://github.com/COSIMA/esmgrids/issues/4).
+- Regridding weights appear to flip latitude and offset longitude  (https://github.com/COSIMA/esmgrids/issues/4).
 
 ** Generating ATM -> ICE OASIS, regridding weights
 
@@ -177,3 +176,7 @@ this changes the remapping file of course...
 
 That seems to work fine. Run is stable. Had to reduce time step at one
 point (year 18ish?) to get past a ice thermo issue but otherwise fine.
+
+** 1/4-degree IAF:
+
+- Ran into a blow-up in 1984-08-11. Upstream issue with ERA-5 winds field. See https://github.com/COSIMA/access-om2/issues/274
