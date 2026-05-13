@@ -79,18 +79,18 @@
             {
                 "filename": "INPUT/{{year}}/2t_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
                 "fieldname": "t2m",
-                "units": "K"
+                "units": "K",
+                "perturbations": [
+                    {
+                        "type": "offset",
+                        "dimension": "constant",
+                        "value": 5,
+                        "calendar": "forcing",
+                        "comment": "Add 5 degrees everywhere at all times"
+                    }
+                ]
             }
         ],
-        "perturbations": [
-            {
-                "type": "offset",
-                "dimension": "constant",
-                "value": 5,
-                "calendar": "forcing",
-                "comment": "Add 5 degrees everywhere at all times"
-            }
-        ]   
     },
     {
         "coupling_field_name": "qair_ai",
