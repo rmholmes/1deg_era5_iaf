@@ -84,7 +84,7 @@
                     {
                         "type": "separable",
                         "dimension": ["temporal","spatial"],
-                        "value": ["INPUT/2t_era5_input4MIPs_atmosphericState_ts_temporal_1982-2017.nc","INPUT/2t_era5_oper_sfc_const_2t_053Cperdecade.nc"],
+                        "value": ["INPUT/2t_era5_input4MIPs_atmosphericState_ts_temporal_1982-2017_unpacked.nc","INPUT/2t_era5_oper_sfc_const_2t_053Cperdecade.nc"],
                         "calendar": "forcing", 
                         "comment": "separable trend adjustment to trend with tas increase of 0.53 C per decade"
                     }
@@ -120,7 +120,7 @@
                     {
                         "type": "separable",
                         "dimension": ["temporal","spatial"],
-                        "value": ["INPUT/u10_era5_input4MIPs_atmosphericState_ts_temporal_1982-2017.nc","INPUT/10u_era5_oper_sfc_increase_u10_015perdecade.nc"],
+                        "value": ["INPUT/u10_era5_input4MIPs_atmosphericState_ts_temporal_1982-2017_unpacked.nc","INPUT/10u_era5_oper_sfc_increase_u10_015perdecade.nc"],
                         "calendar": "forcing", 
                         "comment": "separable trend adjustment to trend with uas increase of 0.15m/s per decade"
                     }
