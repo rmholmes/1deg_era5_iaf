@@ -83,8 +83,11 @@
                 "perturbations": [
                     {
                         "type": "separable",
-                        "dimension": "temporal",
-                        "value": "INPUT/2t_era5_time.nc",
+                        "dimension": ["temporal","spatial"],
+                        "value": [
+                            "INPUT/2t_era5_time.nc",
+                            "INPUT/2t_era5_space.nc"
+                        ],
                         "calendar": "forcing", 
                         "comment": "separable trend adjustment to trend with t2m increase of 0.15K per decade"
                     }
