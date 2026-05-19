@@ -80,18 +80,6 @@
                 "filename": "INPUT/{{year}}/2t_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
                 "fieldname": "t2m",
                 "units": "K",
-                "perturbations": [
-                    {
-                        "type": "separable",
-                        "dimension": ["temporal","spatial"],
-                        "value": [
-                            "INPUT/2t_era5_input4MIPs_atmosphericState_ts_temporal_1982-2017_unpacked.nc",
-                            "INPUT/2t_era5_oper_sfc_const_2t_053Cperdecade.nc"
-                        ],
-                        "calendar": "forcing", 
-                        "comment": "separable trend adjustment to trend with tas increase of 0.53 C per decade"
-                    }
-                ]
             }
         ]
     },
