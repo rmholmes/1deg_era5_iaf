@@ -80,18 +80,6 @@
                 "filename": "INPUT/{{year}}/2t_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
                 "fieldname": "t2m",
                 "units": "K",
-                "perturbations": [
-                    {
-                        "type": "separable",
-                        "dimension": ["temporal","spatial"],
-                        "value": [
-                            "INPUT/2t_era5_time.nc",
-                            "INPUT/2t_era5_space.nc"
-                        ],
-                        "calendar": "forcing", 
-                        "comment": "separable trend adjustment to trend with t2m increase of 0.15K per decade"
-                    }
-                ]
             }
         ]
     },
