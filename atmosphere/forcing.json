@@ -107,18 +107,6 @@
                 "filename": "INPUT/{{year}}/10u_era5_oper_sfc_{{year}}{{month}}{{start_day}}-{{year}}{{month}}{{end_day}}.nc",
                 "fieldname": "u10",
                 "units": "m s**-1",
-                "perturbations": [
-                    {
-                        "type": "separable",
-                        "dimension": ["temporal","spatial"],
-                        "value": [
-                            "INPUT/u10_era5_input4MIPs_atmosphericState_ts_temporal_1982-2017_unpacked.nc",
-                            "INPUT/10u_era5_oper_sfc_increase_u10_015perdecade.nc"
-                        ],
-                        "calendar": "forcing", 
-                        "comment": "separable trend adjustment to trend with uas increase of 0.15m/s per decade"
-                    }
-                ]
             }
         ]
     },
